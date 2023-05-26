@@ -1,1 +1,6 @@
-Welcome to the Brain Games!
+import brain_games.py
+
+def say_hello():
+     print("Hello, world!")
+if __name__ == '__main__':
+     say_hello()
