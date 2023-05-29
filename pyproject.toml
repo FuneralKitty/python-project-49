@@ -6,6 +6,7 @@ authors = ["sergey"]
 readme = "README.md"
 packages = [
  { include = "brain_games" },
+ 
 ]
 
 [tool.poetry.dependencies]
