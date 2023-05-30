@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
+
 import prompt
+
 from cli import welcome_user
 
 def main():
@@ -9,3 +11,4 @@ def main():
 if __name__ == '__main__':
      main()
      welcome_user()
+     
