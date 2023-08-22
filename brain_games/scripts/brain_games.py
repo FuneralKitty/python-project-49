@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import prompt
+from brain_games.scripts.cli import welcome_user
 
 def main():
     print("Welcome to the Brain Games!")
@@ -6,3 +8,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    welcome_user()
