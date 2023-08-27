@@ -1,0 +1,1 @@
+<a href="https://codeclimate.com/github/FuneralKitty/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/0ffafb39f5ea1b073398/maintainability" /></a>
