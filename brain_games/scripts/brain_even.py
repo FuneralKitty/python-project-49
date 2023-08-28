@@ -37,5 +37,3 @@ def play_game():
 
     if user_score == 3:
         print("Congratulations!")
-
-play_game()

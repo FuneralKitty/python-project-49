@@ -11,7 +11,8 @@ package-install:
 	python3 -m pip install --user dist/*.whl
 
 brain-games:
-	poetry run brain-games
-
+	poetry -m run brain_games
+brain-even:
+	poetry -m run brain-even
 make lint:
 	poetry run flake8 brain_games

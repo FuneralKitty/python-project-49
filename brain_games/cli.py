@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from brain_games import prompt
+import prompt
 
 
 def welcome_user():
