@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import random
-
+from brain_games.scripts.brain_games import main
+from brain_games.cli import welcome_user
+    
 def check_even_num(number):
     return number % 2 == 0
 
@@ -39,6 +41,5 @@ def play_game():
 
     if user_score == 3:
         print("Congratulations!")
+play_game()
 
-if __name__ == '__main__':
-    play_game()

@@ -12,7 +12,9 @@ package-install:
 
 brain-games:
 	poetry -m run brain_games
+
 brain-even:
-	poetry -m run brain-even
+	poetry -m run brain-even_game.py
+	
 make lint:
 	poetry run flake8 brain_games
