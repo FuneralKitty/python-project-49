@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 import random
-from brain_games.scripts.brain_games import main
-from brain_games.cli import welcome_user
-    
+from brain_games.engines.engine import check_even_num,get_user_response,print_question,print_correct_answer,print_wrong_answer
+
 def check_even_num(number):
     return number % 2 == 0
 
