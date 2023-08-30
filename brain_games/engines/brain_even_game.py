@@ -2,6 +2,12 @@
 import random
 from brain_games.engines.engine import check_even_num,get_user_response,print_question,print_correct_answer,print_wrong_answer
 
+
+def random_generator():
+    random_num = random.randint(1,100)
+    random_num_2 = random.randint(1,100)
+    return random_num, random_num_2
+
 def check_even_num(number):
     return number % 2 == 0
 
@@ -39,6 +45,6 @@ def play_game():
             break
 
     if user_score == 3:
-        print("Congratulations!")
+        print("Congratulations, ","!")
 play_game()
 

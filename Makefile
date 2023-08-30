@@ -16,5 +16,8 @@ brain-games:
 brain-even:
 	poetry -m run brain-even_game.py
 	
+brain-calculator:
+	poetry -m run brain_calc.py
+
 make lint:
 	poetry run flake8 brain_games
