@@ -1,39 +1,25 @@
-#!/usr/bin/env python3
 import random
-from brain_games.engines.engine import check_even_num,get_user_response,print_question,print_correct_answer,print_wrong_answer
+from brain_games.engines.cli import welcome_user 
+from brain_games.engines.engine import (
+    check_even_num,
+    congratulation,
+    get_user_response,
+    print_question,
+    print_correct_answer,
+    print_wrong_answer,
+)
 
 
-def random_generator():
-    random_num = random.randint(1,100)
-    random_num_2 = random.randint(1,100)
-    return random_num, random_num_2
-
-def check_even_num(number):
-    return number % 2 == 0
-
-def get_user_response(): 
-    return input()
-
-def print_question(number):
-    print('Question: ', number)
-
-def print_correct_answer():
-    print('Correct!')
-
-def print_wrong_answer(answer):
-    if get_user_response == "yes":
-        print(f"'{answer}' is the wrong answer. Correct answer was 'yes'.\nnoLet's try again !")
-    else:
-        print(f"'{answer}' is the wrong answer. Correct answer was 'no'.\nLet's try again !")
 def play_game():
+    input_name = welcome_user()
     print('Answer "yes" if the number is even otherwise answer "no": ')
     user_score = 0 
     while user_score  < 3:
+        name = input_name
         random_num = random.randint(1,100)
         print_question(random_num)
         user_response = get_user_response()
         print('Your answer: ', user_response)
-
         if check_even_num(random_num) and user_response == "yes":
             print_correct_answer()
             user_score += 1
@@ -41,10 +27,15 @@ def play_game():
             print_correct_answer()
             user_score += 1
         else:
-            print_wrong_answer(user_response)
+            print_wrong_answer(user_response, name) #1
             break
+        if user_score == 3:
+            congratulation(name)
 
-    if user_score == 3:
-        print("Congratulations, ","!")
-play_game()
+            
+""" #1 answer variable is what user gave into input. 
+Correct answer is taken from functions(def subtraction,multiplication,addition) 
+In iteration we meet it when it goes to print_wrong_answer_calculation(user_response, expected_result)
+where expected result == correct_answer
+"""
 
