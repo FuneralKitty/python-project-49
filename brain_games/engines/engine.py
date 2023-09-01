@@ -1,67 +1,98 @@
-#!/usr/bin/env python3
 import random
 
-def random_generator(): #for calculator, for even , for gcd . use inside while.
-    random_num = random.randint(1,100)
-    random_num_2 = random.randint(1,100)
+
+def random_generator():
+    random_num = random.randint(1, 100)
+    random_num_2 = random.randint(1, 100)
     return random_num, random_num_2
 
-def progression_random():
-        progression_start = random.randint(1, 100)
-        progression_step = random.randint(2, 33)
-        progression_slice_step = random.randint(5, 10)
-        progression_pop_step = random.randint(1,10)
-        return progression_start, progression_step, progression_slice_step, progression_pop_step
-#math group
 
-def check_even_num(number): # even
+def progression_random():
+    start = random.randint(1, 100)
+    step = random.randint(2, 33)
+    slice_step = random.randint(5, 10)
+    pop_step = random.randint(1, 10)
+    return start, step, slice_step, pop_step
+
+
+def check_even_num(number):  # even
     return number % 2 == 0
 
-def addition(number, number_2): #calculator
+
+def addition(number, number_2):  # calculator
     return number + number_2
 
-def subtraction(number, number_2):#calculator
+
+def subtraction(number, number_2):  # calculator
     return number - number_2
 
-def multiplication(number, number_2):#calculator
+
+def multiplication(number, number_2):  # calculator
     return number * number_2
 
+
 def gcd(a, b):
-    # Проверяем, если одно из чисел равно нулю,
-    # то НОД равен другому числу
     if b == 0:
         return a
-    
-    # Используем рекурсию, чтобы найти НОД
-    # между b и остатком от деления a на b
     return gcd(b, a % b)
 
-#User response group
-def get_user_response(): #allfiles
+
+def is_prime_logic(number):
+    if number <= 1:
+        return "no"
+    if number == 2:
+        return "yes"
+    for i in range(2, number):
+        if number % i == 0:
+            return "no"
+    return "yes"
+
+
+def play_round(start, step, slice_step, pop_step):
+    progression = list(range(start, 999, step))
+    sliced_progression = progression[0:slice_step+1]
+
+    if pop_step > slice_step:
+        pop_step = slice_step
+
+    progression_pop = sliced_progression.pop(pop_step)
+    sliced_progression.insert(pop_step, '..')
+    final_progression = ' '.join(map(str, sliced_progression))
+    print_question(f"{final_progression}")
+
+    user_response = get_user_response()
+    print('Your answer:', user_response)
+
+    return str(user_response), progression_pop
+
+
+def get_user_response():  # allfiles
     return input()
 
-def print_question(number): #allfiles
+
+def print_question(number):  # allfiles
     print('Question: ' + str(number))
 
-def print_correct_answer(): #allfiles
+
+def print_correct_answer():  # allfiles
     print('Correct!')
 
 
-#follow functions work with username
-
-def print_wrong_answer(answer, input_data,): #for even |
+def print_wrong_answer(answer, input_data,):  # for even
     if get_user_response == "yes":
-        print(f"'{answer}' is the wrong answer. Correct answer was 'yes'.\nLet's try again, "+input_data+"!")
+        print(f"'{answer}' is the wrong answer. Correct answer was 'yes'."
+              f"\nLet's try again, " + input_data + "!")
     else:
-        print(f"'{answer}' is the wrong answer. Correct answer was 'no'.\nLet's try again, "+input_data+"!")
+        print(f"'{answer}' is the wrong answer. Correct answer was 'no'."
+              f"\nLet's try again, " + input_data + "!")
 
-def print_wrong_answer_calculation(answer, correct_answer, input_data): #for calculator
-    get_user_response !=  print(f"'{answer}' is the wrong answer. Correct answer was '{correct_answer}'. \nLet's try again, "+input_data+"!")
-        
+
+# for calculator
+def print_wrong_answer_calculation(answer, correct_ans, input_data):
+    get_user_response != print(
+        f"'{answer}' is the wrong answer. Correct answer was '{correct_ans}'. "
+        f"\nLet's try again, " + input_data + "!")
+
+
 def congratulation(input_data):
-    print("Congratulations, "+input_data+"!")
-"""answer variable is what user gave into input. 
-Correct answer is taken from functions(def subtraction,multiplication,addition) 
-In iteration we meet it when it goes to print_wrong_answer_calculation(user_response, expected_result)
-where expected result == correct_answer
-"""
+    print("Congratulations, " + input_data + "!")

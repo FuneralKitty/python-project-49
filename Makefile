@@ -25,5 +25,8 @@ brain-gcd:
 brain-progression:
 	poetry -m run brain_progression.py
 
+brain-prime:
+	poetry -m run brain_prime.py
+
 make lint:
 	poetry run flake8 brain_games

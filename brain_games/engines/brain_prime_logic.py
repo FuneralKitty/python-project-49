@@ -1,23 +1,26 @@
 from brain_games.engines.cli import welcome_user
 from brain_games.engines.engine import (
     congratulation,
+    get_user_response,
+    print_question,
     print_correct_answer,
     print_wrong_answer_calculation,
-    progression_random,
-    play_round
+    random_generator,
+    is_prime_logic
 )
 
 
 def play_game():
     input_name = welcome_user()
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     user_score = 0
-    print('What number is missing in the progression?')
     while user_score < 3:
-        random_numbers = progression_random()
-        start, step, slice_step, pop_step = random_numbers
-        user_response, expected_result = play_round(
-            start, step, slice_step, pop_step)
+        num, _ = random_generator()
 
+        print_question(f"{num}")
+        user_response = get_user_response()
+        print('Your answer:', user_response)
+        expected_result = is_prime_logic(num)
         if user_response == str(expected_result):
             print_correct_answer()
             user_score += 1
@@ -28,7 +31,3 @@ def play_game():
 
     if user_score == 3:
         congratulation(input_name)
-
-
-if __name__ == '__main__':
-    play_game()
