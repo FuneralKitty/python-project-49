@@ -30,9 +30,9 @@ def play_game():
                 print_correct_answer()
                 user_score += 1
             else:
-                print_wrong_answer_calculation(user_response, result, input_name)
+                print_wrong_answer_calculation(
+                    user_response, result, input_name)
                 break
-
 
     if user_score == 3:
         congratulation(input_name)

@@ -29,15 +29,16 @@ def play_game(operand, user_score, input_name):
         print_question(f"{random_num} * {random_num_2}")
         expected_result = multiplication(random_num, random_num_2)
 
-    user_response = get_user_response()
-    print('Your answer:', user_response)
+    user_res = get_user_response()
+    print('Your answer:', user_res)
 
-    if user_response == str(expected_result):
+    if user_res == str(expected_result):
         print_correct_answer()
         return True
     else:
-        print_wrong_answer_calculation(user_response, expected_result, input_name)
+        print_wrong_answer_calculation(user_res, expected_result, input_name)
         return False
+
 
 def calculator():
     input_name = welcome_user()
@@ -58,6 +59,6 @@ def calculator():
             user_score += 1
         else:
             break
-    
+
     if user_score == 3:
         congratulation(input_name)
