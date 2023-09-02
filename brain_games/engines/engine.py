@@ -50,7 +50,7 @@ def is_prime_logic(number):
 
 def play_round(start, step, slice_step, pop_step):
     progression = list(range(start, 999, step))
-    sliced_progression = progression[0:slice_step+1]
+    sliced_progression = progression[0:slice_step + 1]
 
     if pop_step > slice_step:
         pop_step = slice_step
