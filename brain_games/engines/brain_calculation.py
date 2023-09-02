@@ -34,30 +34,30 @@ def play_game(operand, user_score, input_name):
 
     if user_response == str(expected_result):
         print_correct_answer()
-        user_score += 1
+        return True
     else:
-        print_wrong_answer_calculation(
-            user_response, expected_result, input_name)
-        user_score = -1
-
-    return user_score
+        print_wrong_answer_calculation(user_response, expected_result, input_name)
+        return False
 
 def calculator():
     input_name = welcome_user()
     user_score = 0
 
     while user_score < 3:
-        if user_score == -1:
+        if play_game('+', user_score, input_name):
+            user_score += 1
+        else:
             break
-        
-        if user_score < 1:
-            user_score = play_game('+', user_score, input_name)
-        
-        if user_score < 2:
-            user_score = play_game('-', user_score, input_name)
-        
-        if user_score < 3:
-            user_score = play_game('*', user_score, input_name)
+
+        if play_game('-', user_score, input_name):
+            user_score += 1
+        else:
+            break
+
+        if play_game('*', user_score, input_name):
+            user_score += 1
+        else:
+            break
     
     if user_score == 3:
         congratulation(input_name)
