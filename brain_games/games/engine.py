@@ -16,7 +16,7 @@ def play_round(start, step, slice_step, pop_step):
     return str(user_response), progression_pop
 
 
-def get_user_response():  # allfile
+def get_user_response():  # allfiles
     return input()
 
 
