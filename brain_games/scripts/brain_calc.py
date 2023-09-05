@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.brain_calculation import calculator
+from brain_games.games.brain_calculation import play_game
 
 
 def main():
     print("Welcome to the Brain Games!")
-    calculator()
+    play_game()
 
 
 if __name__ == '__main__':

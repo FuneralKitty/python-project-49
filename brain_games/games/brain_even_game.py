@@ -9,7 +9,7 @@ from brain_games.games.engine import (
 )
 
 
-def check_even_num(number):  # even
+def check_even_num(number):
     return number % 2 == 0
 
 
