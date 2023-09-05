@@ -29,7 +29,7 @@ def controlled_operation(operation_counter):
 
 def play_game():
     input_name = welcome_user()
-    print('Answer the result of the math expression.')
+    print("What is the result of the expression?")
     user_score = 0
     operation_counter = 0
 
