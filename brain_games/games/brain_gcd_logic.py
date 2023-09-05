@@ -15,7 +15,6 @@ def gcd(a, b):
     return gcd(b, a % b)
 
 
-
 def random_generator():
     random_num = random.randint(1, 100)
     random_num_2 = random.randint(1, 100)

@@ -37,10 +37,10 @@ def play_game():
         number1 = random.randint(1, 100)
         number2 = random.randint(1, 100)
         operation = controlled_operation(operation_counter)
-        
+
         print_question(f"{number1} {operation} {number2}")
         expected_result = perform_operation(operation, number1, number2)
-        
+
         user_response = get_user_response()
         print('Your answer:', user_response)
 
