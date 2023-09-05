@@ -1,13 +1,16 @@
 import random
 from brain_games.games.cli import welcome_user
 from brain_games.games.engine import (
-    check_even_num,
     congratulation,
     get_user_response,
     print_question,
     print_correct_answer,
     print_wrong_answer,
 )
+
+
+def check_even_num(number):  # even
+    return number % 2 == 0
 
 
 def play_game():
