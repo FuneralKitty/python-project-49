@@ -1,6 +1,6 @@
 import random
-from brain_games.engines.cli import welcome_user
-from brain_games.engines.engine import (
+from brain_games.games.cli import welcome_user
+from brain_games.games.engine import (
     get_user_response,
     congratulation,
     print_question,
