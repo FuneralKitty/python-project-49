@@ -1,63 +1,55 @@
-#!/usr/bin/env python3
-
-from brain_games.engines.cli import welcome_user
-from brain_games.engines.engine import (
+import random
+from brain_games.games.cli import welcome_user
+from brain_games.games.engine import (
+    congratulation,
     get_user_response,
-    random_generator,
-    addition,
-    subtraction,
-    multiplication,
     print_question,
     print_correct_answer,
-    print_wrong_answer_calculation,
-    congratulation
+    print_wrong_answer,
 )
 
 
-def play_game(operand, user_score, input_name):
-    random_numbers = random_generator()
-    random_num, random_num_2 = random_numbers
-    print('What is the result of the expression?')
-
-    if operand == '+':
-        print_question(f"{random_num} + {random_num_2}")
-        expected_result = addition(random_num, random_num_2)
-    elif operand == '-':
-        print_question(f"{random_num} - {random_num_2}")
-        expected_result = subtraction(random_num, random_num_2)
-    elif operand == '*':
-        print_question(f"{random_num} * {random_num_2}")
-        expected_result = multiplication(random_num, random_num_2)
-
-    user_res = get_user_response()
-    print('Your answer:', user_res)
-
-    if user_res == str(expected_result):
-        print_correct_answer()
-        return True
+def perform_operation(operation, number1, number2):
+    if operation == '+':
+        return number1 + number2
+    elif operation == '-':
+        return number1 - number2
     else:
-        print_wrong_answer_calculation(user_res, expected_result, input_name)
-        return False
+        return number1 * number2
 
 
-def calculator():
+def controlled_operation(operation_counter):
+    if operation_counter == 0:
+        return '+'
+    elif operation_counter == 1:
+        return '-'
+    else:
+        return '*'
+
+
+def play_game():
     input_name = welcome_user()
+    print('Answer the result of the math expression.')
     user_score = 0
+    operation_counter = 0
 
     while user_score < 3:
-        if play_game('+', user_score, input_name):
-            user_score += 1
-        else:
-            break
+        number1 = random.randint(1, 100)
+        number2 = random.randint(1, 100)
+        operation = controlled_operation(operation_counter)
+        
+        print_question(f"{number1} {operation} {number2}")
+        expected_result = perform_operation(operation, number1, number2)
+        
+        user_response = get_user_response()
+        print('Your answer:', user_response)
 
-        if play_game('-', user_score, input_name):
+        if str(expected_result) == user_response:
+            print_correct_answer()
             user_score += 1
+            operation_counter += 1
         else:
-            break
-
-        if play_game('*', user_score, input_name):
-            user_score += 1
-        else:
+            print_wrong_answer(user_response, input_name)
             break
 
     if user_score == 3:

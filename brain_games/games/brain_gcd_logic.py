@@ -1,13 +1,25 @@
-from brain_games.engines.cli import welcome_user
-from brain_games.engines.engine import (
+import random
+from brain_games.games.cli import welcome_user
+from brain_games.games.engine import (
     congratulation,
     get_user_response,
     print_question,
     print_correct_answer,
     print_wrong_answer_calculation,
-    random_generator,
-    gcd
 )
+
+
+def gcd(a, b):
+    if b == 0:
+        return a
+    return gcd(b, a % b)
+
+
+
+def random_generator():
+    random_num = random.randint(1, 100)
+    random_num_2 = random.randint(1, 100)
+    return random_num, random_num_2
 
 
 def play_game():

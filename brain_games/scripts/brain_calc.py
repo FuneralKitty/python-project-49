@@ -1,4 +1,5 @@
-from brain_games.engines.brain_calculation import calculator
+#!/usr/bin/env python3
+from brain_games.games.brain_calculation import calculator
 
 
 def main():
