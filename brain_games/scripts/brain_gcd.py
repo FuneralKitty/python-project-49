@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from brain_games.engines.brain_gcd_logic import play_game
 
 

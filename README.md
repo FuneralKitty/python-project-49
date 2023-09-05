@@ -2,43 +2,44 @@
 
 [![hexlet-check](https://github.com/FuneralKitty/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/FuneralKitty/python-project-49/actions/workflows/hexlet-check.yml)
 
-Записи аскинем
+ASCII recordings:
 brain calculator https://asciinema.org/a/bUgBoUDiBPQrn7vJiC0LrkQAA
 brain gcd https://asciinema.org/a/4To5aCraTXEdfky1jvu2AIJDF
 brain progression https://asciinema.org/a/G7qlVbO2junvGorqO0LiWlNvl
 brain prime https://asciinema.org/a/uuRC3VVCnitn9NPC1c3vBHdKD
 brain even https://asciinema.org/a/bvtYTiknhSbUY6yGYHnE9n87M
 
-пример установки игры и игры в even https://asciinema.org/a/nTRtnFNr0qrzkwWCyJNaDn460
+Example installation and playing of the "even" game https://asciinema.org/a/nTRtnFNr0qrzkwWCyJNaDn460
 
-пример игр без запуска через poetry https://asciinema.org/a/2AOkCJcuWq6OQGVnYbFDIorFK
+Example games without launching through poetry https://asciinema.org/a/2AOkCJcuWq6OQGVnYbFDIorFK
 
-Добро пожаловать в игру! Чтобы начать, введите одну из следующих команд:
+Welcome to the game! To start, enter one of the following commands:
 
 brain-even
 brain-calc
 brain-gcd
 brain-progression
 brain-prime
-Цель каждой игры - дать три верных ответа подряд. Если вы допустите хотя бы одну ошибку, вы проиграете.
 
-Важно следовать условиям игры. Например, если вам нужно ответить "yes", будет принят только ответ "yes". Если вы ответите иначе, то потерпите поражение.
+The goal of each game is to give three correct answers in a row. If you make at least one mistake, you will lose.
 
-Описание игр:
+It is important to follow the conditions of the game. For example, if you need to answer "yes", only the answer "yes" will be accepted. If you answer differently, you will be defeated.
+
+Game descriptions:
 
 brain-even
-В этой игре вам нужно определить, является ли число четным.
+In this game, you need to determine whether a number is even or not.
 
 brain-calc
-Здесь вы получите два случайных числа и должны выполнить над ними математическую операцию.
+Here, you will be given two random numbers and must perform a mathematical operation on them.
 
 brain-gcd
-В этой игре вам нужно найти наибольший общий делитель для двух чисел. В ответ нужно ввести только число.
+In this game, you need to find the greatest common divisor for two numbers. Only a number should be entered as an answer.
 
 brain-progression
-В данной игре вы должны найти недостающее звено арифметической прогрессии.
+In this game, you must find the missing link in an arithmetic progression.
 
 brain-prime
-Здесь вам нужно определить, является ли число простым. Если да - ответ "yes", в противном случае - "no".
+Here, you need to determine whether a number is prime or not. If yes, the answer is "yes"; otherwise, the answer is "no".
 
-Удачи в игре!
+Good luck in the game!
