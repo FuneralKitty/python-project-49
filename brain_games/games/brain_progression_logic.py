@@ -1,7 +1,5 @@
 import random
 
-QUEST = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-
 
 def progression():
     start = random.randint(1, 100)

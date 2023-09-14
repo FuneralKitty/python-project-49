@@ -1,8 +1,7 @@
-*.egg-info
-__pycache__
-dist/
-*.pyc
 .venv/
-.coverage
-coverage.xml
-.pytest_cache/
+dist/
+__pycache__/
+.pyproject.toml.swp
+.README.md.swi
+.idea/
+InWork/

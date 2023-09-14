@@ -1,8 +1,6 @@
 import random
 from random import choice
 
-DESCRIPTION = 'What is the result of the expression?'
-
 
 def play_game():
     number1 = random.randint(1, 100)

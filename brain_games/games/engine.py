@@ -29,7 +29,7 @@ def start_game(game_function, func):
 
     while user_score < 3:
         quest, operation = game_function()
-        print("Question: ", quest)
+        print("Question:", quest)
         answer = input('Your answer: ')
 
         if operation == answer:
