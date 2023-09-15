@@ -2,19 +2,19 @@ from brain_games.games.cli import welcome_user
 
 
 def calc():
-    return('What is the result of the expression?')
+    return ('What is the result of the expression?')
 
 
 def even():
-    return('Answer "yes" if the number is even, otherwise answer "no".')
+    return ('Answer "yes" if the number is even, otherwise answer "no".')
 
 
 def gcd_t():
-    return('Find the greatest common divisor of given numbers.')
+    return ('Find the greatest common divisor of given numbers.')
 
 
 def prime():
-    return('Answer "yes" if given number is prime. Otherwise answer "no".')
+    return ('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
 def progress():
