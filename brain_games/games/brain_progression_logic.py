@@ -18,4 +18,4 @@ def progression():
     sliced_progression.insert(pop_step, '..')
     quest = ' '.join(map(str, sliced_progression))
 
-    return quest, operation
+    return quest, str(operation)
