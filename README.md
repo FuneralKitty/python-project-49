@@ -3,15 +3,20 @@
 [![hexlet-check](https://github.com/FuneralKitty/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/FuneralKitty/python-project-49/actions/workflows/hexlet-check.yml)
 
 ASCII recordings:
-brain calculator https://asciinema.org/a/bUgBoUDiBPQrn7vJiC0LrkQAA
-brain gcd https://asciinema.org/a/4To5aCraTXEdfky1jvu2AIJDF
-brain progression https://asciinema.org/a/G7qlVbO2junvGorqO0LiWlNvl
-brain prime https://asciinema.org/a/uuRC3VVCnitn9NPC1c3vBHdKD
-brain even https://asciinema.org/a/bvtYTiknhSbUY6yGYHnE9n87M
+brain calculator [![asciicast](https://asciinema.org/a/bUgBoUDiBPQrn7vJiC0LrkQAA.svg)](https://asciinema.org/a/bUgBoUDiBPQrn7vJiC0LrkQAA)
+brain gcd [![asciicast](https://asciinema.org/a/4To5aCraTXEdfky1jvu2AIJDF.svg)](https://asciinema.org/a/4To5aCraTXEdfky1jvu2AIJDF)
+brain progression [![asciicast](https://asciinema.org/a/G7qlVbO2junvGorqO0LiWlNvl.svg)](https://asciinema.org/a/G7qlVbO2junvGorqO0LiWlNvl)
+brain prime [![asciicast](https://asciinema.org/a/uuRC3VVCnitn9NPC1c3vBHdKD.svg)](https://asciinema.org/a/uuRC3VVCnitn9NPC1c3vBHdKD)
+brain even [![asciicast](https://asciinema.org/a/bvtYTiknhSbUY6yGYHnE9n87M.svg)](https://asciinema.org/a/bvtYTiknhSbUY6yGYHnE9n87M)
 
-Example installation and playing of the "even" game https://asciinema.org/a/nTRtnFNr0qrzkwWCyJNaDn460
+Example installation and playing of the "even" game [![asciicast](https://asciinema.org/a/nTRtnFNr0qrzkwWCyJNaDn460.svg)](https://asciinema.org/a/nTRtnFNr0qrzkwWCyJNaDn460)
 
-Example games without launching through poetry https://asciinema.org/a/2AOkCJcuWq6OQGVnYbFDIorFK
+Example games without launching through poetry [![asciicast](https://asciinema.org/a/2AOkCJcuWq6OQGVnYbFDIorFK.svg)](https://asciinema.org/a/2AOkCJcuWq6OQGVnYbFDIorFK)
+
+Installation steps:
+Download the project.
+Go to the root directory of the project.
+Install it with the command:
 
 Welcome to the game! To start, enter one of the following commands:
 
