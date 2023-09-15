@@ -15,12 +15,12 @@ def is_prime():
     return result, question
 
 
-def task_condition():
-    result, question = is_prime()
+def play_game():
+    result, quest = is_prime()
 
     if result is True:
-        correct = 'yes'
+        operation = 'yes'
     elif result is False:
-        correct = 'no'
+        operation = 'no'
 
-    return question, correct
+    return quest, operation
