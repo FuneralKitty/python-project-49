@@ -16,7 +16,7 @@ Example games without launching through poetry [![asciicast](https://asciinema.o
 Installation steps:
 Download the project.
 Go to the root directory of the project.
-Install it with the command:
+
 
 Welcome to the game! To start, enter one of the following commands:
 
