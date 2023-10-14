@@ -15,7 +15,7 @@ def play_game():
         operation = str(first_number + second_number)
     elif operator == '-':
         operation = str(first_number - second_number)
-    else:
+    elif operator == '*':
         operation = str(first_number * second_number)
 
     quest = f'{first_number} {operator} {second_number}'
