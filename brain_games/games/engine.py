@@ -1,5 +1,5 @@
 from brain_games.games.cli import welcome_user
-
+from constants import game_rounds
 
 def start_game(game_function,description ):
     print('Welcome to the Brain Games!')
@@ -7,7 +7,7 @@ def start_game(game_function,description ):
     user_score = 0
 
     print(description)
-    while user_score < 3:
+    while user_score < game_rounds:
         quest, operation = game_function()
         print("Question:", quest)
         answer = input('Your answer: ')
@@ -21,5 +21,5 @@ def start_game(game_function,description ):
                   f"\nLet's try again, " + input_name + "!")
             break
 
-    if user_score == 3:
+    if user_score == game_rounds:
         print("Congratulations, " + input_name + "!")
