@@ -9,7 +9,7 @@ def start_game(game_function,description ):
     print(description)
     while user_score < game_rounds:
         quest, operation = game_function()
-        print("Question:", quest)
+        print('Question:', quest)
         answer = input('Your answer: ')
 
         if operation == answer:
@@ -22,4 +22,4 @@ def start_game(game_function,description ):
             break
 
     if user_score == game_rounds:
-        print("Congratulations, " + input_name + "!")
+        print('Congratulations, ' + input_name + '!')

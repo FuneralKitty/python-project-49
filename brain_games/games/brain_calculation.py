@@ -6,18 +6,18 @@ description = 'What is the result of the expression?'
 
 
 def play_game():
-    number1 = random.randint(1, 100)
-    number2 = random.randint(1, 100)
+    first_number = random.randint(1, 100)
+    second_number = random.randint(1, 100)
 
-    operator = choice(["+", "-", "*"])
+    operator = choice(['+', '-', '*'])
 
     if operator == '+':
-        operation = str(number1 + number2)
+        operation = str(first_number + second_number)
     elif operator == '-':
-        operation = str(number1 - number2)
+        operation = str(first_number - second_number)
     else:
-        operation = str(number1 * number2)
+        operation = str(first_number * second_number)
 
-    quest = f"{number1} {operator} {number2}"
+    quest = f'{first_number} {operator} {second_number}'
 
     return quest, operation

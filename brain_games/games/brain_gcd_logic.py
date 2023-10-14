@@ -11,9 +11,9 @@ def calculate_gcd(a, b):
 
 
 def generate_gcd_question():  # Измените имя функции
-    random_num = randint(1, 100)
-    random_num_2 = randint(1, 100)
-    answer = str(calculate_gcd(random_num, random_num_2))
-    question = f'{random_num_2} {random_num}'
+    first_gcd_num = randint(1, 100)
+    second_gcd_num = randint(1, 100)
+    answer = str(calculate_gcd(first_gcd_num, second_gcd_num))
+    question = f'{first_gcd_num} {first_gcd_num}'
 
     return question, answer

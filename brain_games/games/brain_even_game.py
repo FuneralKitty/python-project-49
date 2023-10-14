@@ -5,11 +5,11 @@ description = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def play_game():
-    quest = randint(0, 100)
+    generated_num_for_question = randint(0, 100)
 
-    if quest % 2 == 0:
+    if generated_num_for_question % 2 == 0:
         operation = 'yes'
-    elif quest % 2 != 0:
+    elif generated_num_for_question % 2 != 0:
         operation = 'no'
 
-    return quest, operation
+    return generated_num_for_question, operation
