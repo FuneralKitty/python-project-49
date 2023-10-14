@@ -1,6 +1,9 @@
 import random
 
 
+description = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def is_prime():
     question = random.randint(2, 100)
     n = 0

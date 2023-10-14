@@ -1,32 +1,12 @@
 from brain_games.games.cli import welcome_user
 
 
-def calc():
-    return ('What is the result of the expression?')
-
-
-def even():
-    return ('Answer "yes" if the number is even, otherwise answer "no".')
-
-
-def gcd_t():
-    return ('Find the greatest common divisor of given numbers.')
-
-
-def prime():
-    return ('Answer "yes" if given number is prime. Otherwise answer "no".')
-
-
-def progress():
-    print('What number is missing in the progression?')
-
-
-def start_game(game_function, func):
+def start_game(game_function,description ):
     print('Welcome to the Brain Games!')
     input_name = welcome_user()
     user_score = 0
-    f = func()
-    print(f)
+
+    print(description)
     while user_score < 3:
         quest, operation = game_function()
         print("Question:", quest)

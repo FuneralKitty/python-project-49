@@ -1,6 +1,9 @@
 from random import randint
 
 
+description = 'Find the greatest common divisor of given numbers.'
+
+
 def calculate_gcd(a, b):
     while b:
         a, b = b, a % b

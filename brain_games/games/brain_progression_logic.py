@@ -1,6 +1,9 @@
 import random
 
 
+description = 'What number is missing in the progression?'
+
+
 def progression():
     start = random.randint(1, 100)
     step = random.randint(2, 33)
