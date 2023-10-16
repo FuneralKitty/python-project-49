@@ -1,5 +1,5 @@
 from brain_games.games.cli import welcome_user
-from constants import game_rounds
+from brain_games.games.constants import game_rounds
 
 def start_game(game_function,description ):
     print('Welcome to the Brain Games!')
