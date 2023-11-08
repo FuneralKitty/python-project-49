@@ -5,7 +5,7 @@ from brain_games.games.constants import progression_start, progression_step
 description = 'What number is missing in the progression?'
 
 
-def progression(length=10, min_length=5):
+def progression(length=10):
     start = random.randint(*progression_start)  # Adjust the range as needed
     step = random.randint(*progression_step)  # Adjust the range as needed
     end = start + (length - 1) * step

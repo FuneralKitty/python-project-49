@@ -1,6 +1,6 @@
 import random
 from random import choice
-from brain_games.games.constants import *
+from brain_games.games.constants import first_number_calc, second_number_calc
 
 description = 'What is the result of the expression?'
 

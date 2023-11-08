@@ -5,18 +5,6 @@ description = 'Find the greatest common divisor of given numbers.'
 
 
 def calculate_gcd(a, b):
-    '''
-    Calculates the gcd
-    args: ints a,b
-    >>> calculate_gcd(75,75)
-    75
-    >>> calculate_gcd(1,3)
-    1
-    >>> calculate_gcd(100,100)
-    100
-    >>> calculate_gcd(100,10)
-    10
-    '''
     while b:
         a, b = b, a % b
     return a

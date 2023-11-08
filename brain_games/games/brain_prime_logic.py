@@ -23,7 +23,7 @@ def play_game():
 
     if result is True:
         operation = 'yes'
-    elif result is False:
+    else:
         operation = 'no'
 
     return prime_number, operation
