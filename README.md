@@ -15,7 +15,11 @@ Example games without launching through poetry [![asciicast](https://asciinema.o
 
 Installation steps:
 Download the project.
-Go to the root directory of the project.
+open the terminal
+choose the right place for the game(cd,ls for navigation)
+
+type: git clone https://github.com/FuneralKitty/python-project-49.git
+Games were installed successfully
 
 
 Welcome to the game! To start, enter one of the following commands:
