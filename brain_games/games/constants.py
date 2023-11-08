@@ -3,19 +3,19 @@ game_rounds = 3
 Changing those numbers will affect on code generation
 each pair of nums goes for generating two or more nums'''
 
-#for calculation
+# for calculation
 first_number_calc = 0
 second_number_calc = 100
 
-#for even
+# for even
 first_number_even = 0
 second_number_even = 100
-#for gcd_logic
+# for gcd_logic
 first_number_gcd = 0
 second_number_gcd = 100
-#for brain_prime
+# for brain_prime
+prime_numbers = 1, 100
 
-
-#for progression
-progression_start = 1,50
-progression_step = 1,10
+# for progression
+progression_start = 1, 50
+progression_step = 1, 10

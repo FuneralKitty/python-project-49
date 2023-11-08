@@ -1,7 +1,8 @@
 from brain_games.games.cli import welcome_user
 from brain_games.games.constants import game_rounds
 
-def start_game(game_function,description ):
+
+def start_game(game_function, description):
     print('Welcome to the Brain Games!')
     input_name = welcome_user()
     user_score = 0

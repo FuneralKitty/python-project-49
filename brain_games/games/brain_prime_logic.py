@@ -1,11 +1,11 @@
 import random
-
+from brain_games.games.constants import prime_numbers
 
 description = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime():
-    prime_number = random.randint(2, 100)
+    prime_number = random.randint(*prime_numbers)
     n = 0
 
     for i in range(2, prime_number // 1):
