@@ -1,11 +1,10 @@
 import random
-from brain_games.games.constants import progression_start,progression_step
-
+from brain_games.games.constants import progression_start, progression_step
 
 
 description = 'What number is missing in the progression?'
 
-import random
+
 def progression(length=10, min_length=5):
     start = random.randint(*progression_start)  # Adjust the range as needed
     step = random.randint(*progression_step)  # Adjust the range as needed

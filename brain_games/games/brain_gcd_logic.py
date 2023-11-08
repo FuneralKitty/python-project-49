@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.games.constants import first_number_gcd,second_number_gcd
+from brain_games.games.constants import first_number_gcd, second_number_gcd
 
 description = 'Find the greatest common divisor of given numbers.'
 
