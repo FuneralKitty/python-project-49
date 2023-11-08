@@ -1,14 +1,17 @@
 import random
-
+from brain_games.games.constants import (progression_step_num,
+                                         progression_end_step_num,
+                                         progression_slice_step_num,
+                                         progression_start_num)
 
 description = 'What number is missing in the progression?'
 
 
 def progression():
-    progression_start = random.randint(1, 100)
-    progression_step = random.randint(2, 33)
-    progression_slice_step = random.randint(5, 10)
-    progression_end_step = random.randint(101, 999)
+    progression_start = random.randint(*progression_start_num)
+    progression_step = random.randint(*progression_step_num)
+    progression_slice_step = random.randint(*progression_slice_step_num)
+    progression_end_step = random.randint(*progression_end_step_num)
 
     progression = list(range(progression_start, progression_end_step, progression_step))
     sliced_progression = progression[0:progression_slice_step + 1]
