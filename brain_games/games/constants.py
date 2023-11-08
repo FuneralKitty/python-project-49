@@ -17,7 +17,5 @@ second_number_gcd = 100
 
 
 #for progression
-progression_start_num = 1,100
-progression_step_num = 2,33
-progression_slice_step_num = 5,10
-progression_end_step_num = 1,99
+progression_start = 1,50
+progression_step = 1,10
