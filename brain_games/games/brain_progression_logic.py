@@ -6,7 +6,7 @@ from brain_games.games.constants import (progression_step_num,
 
 description = 'What number is missing in the progression?'
 
-
+#progression_
 def progression():
     progression_start = random.randint(*progression_start_num)
     progression_step = random.randint(*progression_step_num)
