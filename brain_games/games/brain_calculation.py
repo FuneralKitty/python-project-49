@@ -1,13 +1,13 @@
 import random
 from random import choice
-
+from brain_games.games.constants import *
 
 description = 'What is the result of the expression?'
 
 
 def play_game():
-    first_number = random.randint(1, 100)
-    second_number = random.randint(1, 100)
+    first_number = random.randint(first_number_calc, second_number_calc)
+    second_number = random.randint(first_number_calc, second_number_calc)
 
     operator = choice(['+', '-', '*'])
 
