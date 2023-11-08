@@ -20,4 +20,4 @@ second_number_gcd = 100
 progression_start_num = 1,100
 progression_step_num = 2,33
 progression_slice_step_num = 5,10
-progression_end_step_num = 101,999
+progression_end_step_num = 1,99

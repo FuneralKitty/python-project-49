@@ -6,22 +6,14 @@ from brain_games.games.constants import (progression_step_num,
 
 description = 'What number is missing in the progression?'
 
-
-def progression():
-    progression_start = random.randint(*progression_start_num)
-    progression_step = random.randint(*progression_step_num)
-    progression_slice_step = random.randint(*progression_slice_step_num)
-    progression_end_step = random.randint(*progression_end_step_num)
-
-    progression = list(range(progression_start, progression_end_step, progression_step))
-    sliced_progression = progression[0:progression_slice_step + 1]
-
-    if progression_end_step > progression_slice_step:
-        progression_end_step = progression_slice_step
-
-    # we take this step out of progression
-    operation = sliced_progression.pop(progression_end_step)
-    sliced_progression.insert(progression_end_step, '..')
-    quest = ' '.join(map(str, sliced_progression))
-
-    return quest, str(operation)
+import random
+def progression(length=10, min_length=5):
+    start = random.randint(1, 50)  # Adjust the range as needed
+    step = random.randint(1, 10)  # Adjust the range as needed
+    end = start + (length - 1) * step
+    hidden_index = random.randint(0, length - 1)
+    progression = list(range(start, end + step, step))
+    hidden_value = progression[hidden_index]
+    progression[hidden_index] = '..'
+    progression_str = ' '.join(map(str, progression))
+    return progression_str, hidden_value
